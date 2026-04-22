@@ -31,7 +31,7 @@ function GalleryModal({ artwork, onClose }: GalleryModalProps) {
           Закрыть
         </button>
 
-        <div className="grid gap-0 md:max-h-[90vh] md:grid-cols-[1.4fr_0.9fr]">
+        <div className="grid gap-0 md:max-h-[90vh] md:grid-cols-[3.4fr_0.9fr]">
           <div className="flex items-center justify-center bg-slate-100 p-4 sm:p-6">
             <img
               src={artwork.image}
@@ -51,11 +51,6 @@ function GalleryModal({ artwork, onClose }: GalleryModalProps) {
               <p className="mt-4 text-base leading-7 text-[var(--color-text-muted)]">
                 {artwork.description}
               </p>
-            </div>
-
-            <div className="mt-8 rounded-3xl bg-[var(--color-surface-alt)] p-5 text-sm leading-6 text-[var(--color-text-muted)]">
-              Каждая работа вдохновлена природными состояниями: светом, воздухом, тишиной и
-              движением. Галерея адаптирована для комфортного просмотра на любом устройстве.
             </div>
           </div>
         </div>

@@ -13,23 +13,12 @@ function HomePage() {
             Онлайн-галерея художника
           </p>
           <h2 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">
-            Портфолио, где природа раскрывается через цвет, свет и настроение.
+            Портфолио, где жизнь раскрывается через цвет, свет и настроение.
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-[var(--color-text-muted)] sm:text-lg">
-            Коллекция живописных работ, вдохновлённых морем, лесами, горами и тихими полями.
+            Коллекция живописных работ, вдохновлённых прекрасными людьми, морем, лесами, горами и тихими полями.
             Нажмите на любую работу, чтобы рассмотреть её в увеличенном формате.
           </p>
-        </div>
-
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div className="rounded-[28px] bg-[var(--color-surface)] p-5 shadow-lg">
-            <p className="text-3xl font-semibold">8</p>
-            <p className="mt-2 text-sm text-[var(--color-text-muted)]">избранных работ в галерее</p>
-          </div>
-          <div className="rounded-[28px] bg-[var(--color-surface)] p-5 shadow-lg">
-            <p className="text-3xl font-semibold">1</p>
-            <p className="mt-2 text-sm text-[var(--color-text-muted)]">авторский стиль, основанный на природе</p>
-          </div>
         </div>
       </div>
 

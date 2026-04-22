@@ -18,7 +18,7 @@ function Layout() {
               <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--color-accent)]">
                 Artist Portfolio
               </p>
-              <h1 className="mt-2 text-2xl font-semibold sm:text-3xl">Природа в красках</h1>
+              <h1 className="mt-2 text-2xl font-semibold sm:text-3xl">Жизнь в красках</h1>
             </div>
 
             <nav className="flex flex-wrap items-center gap-2">
