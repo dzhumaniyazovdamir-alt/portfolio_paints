@@ -71,3 +71,17 @@ export default defineConfig([
   },
 ])
 ```
+
+## CI/CD and Firebase Hosting
+
+This project now includes GitHub Actions for automatic build and deployment:
+
+- `.github/workflows/ci.yml` runs `npm ci` and `npm run build` on every push and pull request.
+- `.github/workflows/firebase-hosting-live.yml` builds and deploys the app to Firebase Hosting on every push to `main`.
+
+Firebase Hosting uses `firebase.json` with `dist` as the build output and an SPA rewrite to `/index.html`.
+
+Before deployment can work in GitHub Actions, add these repository secrets:
+
+- `FIREBASE_PROJECT_ID` - your existing Firebase project ID.
+- `FIREBASE_SERVICE_ACCOUNT` - the full JSON contents of a service account key that can deploy to Firebase Hosting.
