@@ -3,8 +3,8 @@ import streetImage from '../assets/pictures/street.jpg'
 import winterImage from '../assets/pictures/winter.jpg'
 import lakeImage from '../assets/pictures/lake.jpg'
 import portraitImage from '../assets/pictures/portrait.jpg'
-import forestImage from '../assets/pictures/forest.jpg'
-import street1Image from '../assets/pictures/street1.jpg'
+import forestImage from '../assets/pictures/forest.png'
+import street1Image from '../assets/pictures/street1.png'
 
 export type Artwork = {
   id: number
