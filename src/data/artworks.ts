@@ -1,3 +1,6 @@
+import morningImage from '../assets/pictures/morning.jpg'
+import streetImage from '../assets/pictures/street.jpg'
+
 export type Artwork = {
   id: number
   title: string
@@ -8,14 +11,14 @@ export type Artwork = {
 export const artworks: Artwork[] = [
   {
     id: 1,
-    title: 'Туманное утро',
-    image: '/public/pictures/street.jpg',
-    description: 'Нежный свет раннего утра среди гор и леса.',
+    title: 'Улицы Праги',
+    image: streetImage,
+    description: '',
   },
   {
     id: 2,
-    title: 'Зеркальное озеро',
-    image: '/public/pictures/morning.jpg',
-    description: 'Спокойная водная гладь и мягкие отражения природы.',
+    title: 'Рассвет',
+    image: morningImage,
+    description: '',
   },
 ]
