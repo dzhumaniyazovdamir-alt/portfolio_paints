@@ -12,12 +12,12 @@ function GalleryModal({ artwork, onClose }: GalleryModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(17,14,11,0.72)] p-4 backdrop-blur-[2px]"
       onClick={onClose}
       role="presentation"
     >
       <div
-        className="relative w-full max-w-5xl overflow-hidden rounded-[28px] border border-white/15 bg-[var(--color-surface)] shadow-2xl max-h-[90vh]"
+        className="relative max-h-[90vh] w-full max-w-6xl overflow-hidden border border-[var(--color-border-soft)] bg-white shadow-[0_30px_90px_rgba(0,0,0,0.18)]"
         onClick={(event) => event.stopPropagation()}
         role="dialog"
         aria-modal="true"
@@ -26,32 +26,36 @@ function GalleryModal({ artwork, onClose }: GalleryModalProps) {
         <button
           type="button"
           onClick={onClose}
-          className="absolute right-4 top-4 z-10 rounded-full bg-white/85 px-3 py-2 text-sm font-medium text-slate-900 shadow-lg transition hover:bg-white"
+          className="absolute right-5 top-5 z-10 border border-[var(--color-border-soft)] bg-white px-3 py-1.5 text-[10px] tracking-[0.22em] text-[var(--color-text-muted)] [font-family:var(--font-sans)] transition hover:text-[var(--color-text)]"
         >
-          Закрыть
+          CLOSE
         </button>
 
-        <div className="grid gap-0 md:max-h-[90vh] md:grid-cols-[3.4fr_0.9fr]">
-          <div className="flex items-center justify-center bg-slate-100 p-4 sm:p-6">
+        <div className="grid gap-0 md:max-h-[90vh] md:grid-cols-[minmax(0,1.6fr)_minmax(280px,0.7fr)]">
+          <div className="flex items-center justify-center bg-[#f4efe7] p-4 sm:p-6">
             <img
               src={artwork.image}
               alt={artwork.title}
-              className="max-h-[60vh] w-full rounded-[20px] object-contain md:max-h-[82vh]"
+              className="max-h-[78vh] w-full object-contain"
             />
           </div>
 
-          <div className="flex flex-col justify-between overflow-y-auto p-6 sm:p-8">
+          <div className="flex flex-col justify-between overflow-y-auto border-t border-[var(--color-border-soft)] p-6 md:border-l md:border-t-0 md:p-8">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[var(--color-accent)]">
-                Картина
+              <p className="text-[10px] tracking-[0.26em] text-[var(--color-text-muted)] [font-family:var(--font-sans)]">
+                SELECTED WORK
               </p>
-              <h2 className="mt-3 text-3xl font-semibold text-[var(--color-text)]">
+              <h2 className="mt-4 text-3xl leading-tight tracking-[-0.03em] [font-family:var(--font-serif)] sm:text-4xl">
                 {artwork.title}
               </h2>
-              <p className="mt-4 text-base leading-7 text-[var(--color-text-muted)]">
+              <p className="mt-5 text-base leading-7 text-[var(--color-text-muted)]">
                 {artwork.description}
               </p>
             </div>
+
+            <p className="mt-8 border-t border-[var(--color-border-soft)] pt-5 text-sm leading-7 text-[var(--color-text-muted)]">
+              Collage, paint, and found imagery arranged with a quiet editorial balance.
+            </p>
           </div>
         </div>
       </div>
