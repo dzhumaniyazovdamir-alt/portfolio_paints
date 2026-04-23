@@ -18,7 +18,7 @@ function Layout() {
               to="/"
               className="justify-self-start text-[30px] leading-none tracking-[-0.03em] [font-family:var(--font-serif)]"
             >
-              Ariel Lynn
+              Damir Djumaniyazov
             </NavLink>
 
             <nav className="flex flex-wrap items-center justify-center gap-5 [font-family:var(--font-sans)] sm:gap-6">

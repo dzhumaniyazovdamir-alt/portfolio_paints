@@ -9,11 +9,11 @@ function HomePage() {
     <section className="pb-8">
       <div id="about" className="mx-auto max-w-[1020px] px-2 pb-10 pt-3 text-center sm:pb-12">
         <h2 className="text-[34px] leading-[1.24] tracking-[-0.035em] [font-family:var(--font-serif)] sm:text-[48px] lg:text-[58px]">
-          Hello! I am Ariel Lynn - Artist and writer from Albuquerque, New Mexico.
+          Hello! I am Damir Djumaniyaov from Volgograd. I like to draw...
         </h2>
       </div>
 
-      <div id="portfolio" className="columns-1 gap-4 sm:columns-2 sm:gap-5 xl:columns-3 xl:gap-6">
+      <div id="portfolio" className="columns-2 gap-4 sm:columns-3 sm:gap-5 xl:columns-4 xl:gap-6">
         {artworks.map((artwork) => (
           <button
             key={artwork.id}
